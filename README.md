@@ -1,6 +1,4 @@
-[![Circle CI](https://circleci.com/gh/sameersbn/docker-bind.svg?style=shield)](https://circleci.com/gh/sameersbn/docker-bind)
-
-# sameersbn/bind
+# erikaulin/bind
 
 - [Introduction](#introduction)
   - [Contributing](#contributing)
@@ -44,7 +42,7 @@ If the above recommendations do not help then [report your issue](../../issues/n
 
 ## Installation
 
-This image is available as a [trusted build](//hub.docker.com/r/sameersbn/bind) on the [Docker hub](//hub.docker.com) and is the recommended method of installation.
+This image is available as a [trusted build](//hub.docker.com/r/erikaulin/bind) on the [Docker hub](//hub.docker.com) and is the recommended method of installation.
 
 ```bash
 docker pull sameersbn/bind:latest
@@ -53,7 +51,7 @@ docker pull sameersbn/bind:latest
 Alternatively you can build the image yourself.
 
 ```bash
-git clone https://github.com/sameersbn/docker-bind.git
+git clone https://github.com/erikaulin/docker-bind.git
 cd docker-bind
 docker build --tag $USER/bind .
 ```
@@ -75,7 +73,7 @@ When the container is started the [Webmin](http://www.webmin.com/) service is al
 
 The launch of Webmin can be disabled by adding `--env WEBMIN_ENABLED=false` to the `docker run` command. Note that the `ROOT_PASSWORD` parameter has no effect when the launch of Webmin is disabled.
 
-Read the blog post [Deploying a DNS Server using Docker](http://www.damagehead.com/blog/2015/04/28/deploying-a-dns-server-using-docker/) for an example use case.
+Read the blog post original creator [Deploying a DNS Server using Docker](http://www.damagehead.com/blog/2015/04/28/deploying-a-dns-server-using-docker/) for an example use case.
 
 ## Command-line arguments
 

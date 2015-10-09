@@ -1,7 +1,10 @@
-Bind:
-  image: sameersbn/bind:latest
+bind:
+  image: erikaulin/bind:latest
+  dns: 127.0.0.1
+  environment:
+    - ROOT_PASSWORD=SecretPassword
   ports:
-    - "53:53/udp"
+   - 192.168.125.130:10000:10000
+   - 192.168.125.130:53:53/udp
   volumes:
     - /srv/docker/bind:/data
-  restart: always
